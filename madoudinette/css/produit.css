@@ -1,0 +1,337 @@
+/* ||MENU DEROULANT|| */
+.sous{
+    display: none;
+    background : linear-gradient(to bottom, #929f19, #6E7814);
+    position: absolute;
+    width: 10%;
+}
+
+.deroulant:hover .sous{
+    display: block;
+}
+
+.langues *{
+    color: #52300f;
+}
+
+/* ||CATALOGUE ET PAGES PRODUITS|| */
+.caracteristiques_produits{
+  font-size: 110%;  
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.caracteristiques_produits li{
+    display: flex;
+    background-color: #FAB716;
+    border-radius: 100%;
+    padding: 40px 5px;
+    width:70%;
+    height: 150%;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.caracteristiques_produits span{
+    align-items: center;
+    
+}
+
+/* ||CATALOGUE|| */
+
+body.catalogue main{
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*Section titre: les produits Madoudinette (haut)*/
+.titre_produits{
+    background-image: url("../img/photos/spices_background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    display: grid;
+    justify-items: center;
+    color: floralwhite;
+    text-shadow: 0px 0px 20px #52300f;
+}
+
+.titre_produits h1{
+    font-size: 300%;
+}
+
+.titre_produits p{
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    width: 70%;
+    margin-bottom: 2%;
+}
+
+.titre_produits p>span{
+    color: #fab716;
+}
+
+
+body.catalogue .caracteristiques_produits{
+    height: 55%;
+    width:25%;
+    margin-top: 0%;
+}
+
+body.catalogue .caracteristiques_produits li{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+body.catalogue figure{
+    margin-right: 10px;
+    height:60px;
+}
+
+body.catalogue figure img{
+    height: 50px;
+    border: 3px solid #929F19;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+/*Section les différents produits*/
+.produits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-product{
+    width: 30%;
+    background-color: #FAD375;
+    border-radius: 30px;
+    padding: 10px;
+    margin:10px;
+    display: grid;
+    justify-content: center;
+}
+
+.container-product > img{
+    justify-self: center;
+}
+
+#yassa_photo{
+    width:165px;
+}
+
+.container-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px floralwhite;;
+}
+
+.boutons_produits{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.boutons_produits a{
+    border-radius: 10px;
+    color:white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.en_savoir_plus{
+    background-color: #929f19;
+}
+
+.en_savoir_plus:hover {
+    color: rgba(255, 255, 255, 0.779);
+    background-color: #B4BD66;
+    box-shadow: 0px 0px 5px #929f19;
+}
+
+.acheter{
+    background-color: #e7820a;
+}
+
+.acheter:hover{
+    color: rgba(255, 255, 255, 0.779);
+    background-color: #E8A454;
+    box-shadow: 0px 0px 5px #e7820a;
+}
+
+.ajout_panier{
+    background-color: #52300f;
+}
+
+.ajout_panier:hover{
+    color: rgba(255, 255, 255, 0.779);
+    background-color: #695849;
+    box-shadow: 0px 0px 5px #52300f;
+}
+
+/*Div contacter nous*/
+#catalogue_contact{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    justify-content: center; 
+    font-size: 130%;
+}   
+   
+#catalogue_contact img{    
+    height: 100px;
+    margin: 10px 0px;  
+    display: block;    
+    justify-self: center; 
+}
+
+#catalogue_contact a{
+    width: 60%;
+    padding: 5px;
+    justify-self: center;    
+    background-color:#e7820a; 
+    border-radius: 10px;
+    color:white;    
+}
+
+#catalogue_contact a:hover{
+    color: rgba(255, 255, 255, 0.779);
+    background-color: #E8A454;
+    box-shadow: 0px 0px 5px #e7820a;
+}
+
+/* ||FICHES PRODUITS|| */
+
+body.produit main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/*Backgrounds fiches produits*/
+body.poulet .titre_produit{
+    background-image: url("../img/produits/yassa5.jpg");
+    background-position: 50% 0%;
+    background-size: 220%;    
+}
+
+body.boeuf .titre_produit{
+    background-image: url("../img/produits/mafe2.jpg");
+    background-size: 220%;    
+}
+
+body.poisson .titre_produit{
+    background-image: url("../img/produits/tieb.jpg");
+    background-position: 60% 0%;
+    background-size: 240%;    
+}
+
+/*Section titre produit (gauche)*/
+
+.titre_produit{
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 3%;
+}
+.titre_produit>h1{
+    font-size: 500%;
+    color: floralwhite;
+    text-shadow: 0px 0px 10px #52300f;
+    font-weight: bold;
+}
+.titre_produit>h2{
+    color: floralwhite;
+    text-shadow: 0px 0px 10px #52300f;
+    font-weight: bold;
+    font-size: 125%;
+    font-style: italic;
+}
+
+/*Section description produit (droite)*/
+.description_produit{
+    display: block;
+    padding: 1%;
+}
+.presentation_produit{
+    padding: 10px 10px;
+    width: 90%;
+}
+/*Images ingrédients*/
+.composition{
+    display: flex;
+    justify-content: center;
+}
+
+.composition figure{
+    margin-right: 10px;
+    height:60px;
+}
+
+.composition figcaption{
+    color: #929F19;
+    font-weight: bold;
+}
+
+.composition img{
+    height: 50px;
+    border: 3px solid #929F19;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.conteneur{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+/*Fiche résumé produit*/
+.fiche_produit{
+    background-color: #fab716;
+    border-radius: 10px;
+    display: block;
+    padding: 2% 5%;
+    width: 50%;
+    box-shadow: 0px 0px 20px floralwhite;
+}
+
+.fiche_produit *{
+    color: white;
+}
+.titres_resume{
+    font-weight: bold;
+}
+
+.fiche_produit>h3{
+    text-align: center;
+}
+
+.fiche_produit ul{
+    text-align: left;   
+    list-style-type: circle;
+    padding-bottom: 3px;  
+}
+
+/*PAGE BIENTOT DISPONIBLE*/
+#main-disponible{
+    text-align:center;
+    padding:10px;
+}
+#main-disponible h1{
+    font-size: 700%;
+    color:#e7820a;
+}
+
+#main-disponible p{
+    color:#52300f;
+    font-size:120%;
+}
+   
