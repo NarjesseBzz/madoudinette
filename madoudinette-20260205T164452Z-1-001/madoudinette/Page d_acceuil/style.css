@@ -1,0 +1,421 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background: #ffd9ac;          /* beige fond */
+    color: #4b2a17;               /* marron texte */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Mise en page générale */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* HEADER */
+
+.site-header {
+    background: #255b2c;          /* vert foncé */
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 16px;
+}
+
+.logo-img {
+    height: 56px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 6px;
+}
+
+.lang-btn {
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 999px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: #fff;
+    color: #255b2c;
+}
+
+/* HERO */
+
+.hero {
+    padding: 40px 0 50px;
+    background: #ffd9ac;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ffe7c1;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-family: "Baloo 2", cursive;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    color: #865f43;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 26px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: #1f6a38;
+    color: #fff;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #1f6a38;
+    border-color: #1f6a38;
+}
+
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.hero-badges span {
+    background: #ffe7c1;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* Visuel pot */
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.product-stack {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.jar-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    transform: translate(-50%, -55%);
+}
+
+.hero-label {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    max-width: 210px;
+}
+
+.hero-label p:first-child {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 40px 0;
+}
+
+.section-commitments {
+    background: #ffe9c8;
+}
+
+.section-story {
+    background: #fff8f0;
+}
+
+.section-products {
+    background: #fffdf8;
+}
+
+.section-contact {
+    background: #255b2c;
+    color: #fff;
+}
+
+.section-header {
+    margin-bottom: 24px;
+}
+
+.section-header.center {
+    text-align: center;
+}
+
+.section-header h2 {
+    font-family: "Baloo 2", cursive;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.section-header p {
+    font-size: 14px;
+    color: #865f43;
+}
+
+/* Engagements */
+
+.commitments-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.commit-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    flex: 1;
+    min-width: 220px;
+    font-size: 14px;
+}
+
+.commit-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* Histoire */
+
+.story-layout {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.story-image,
+.story-text {
+    flex: 1;
+}
+
+.story-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.story-text h2 {
+    font-family: "Baloo 2", cursive;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.story-text p + p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Produits */
+
+.products-layout {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.products-photo,
+.products-info {
+    flex: 1;
+}
+
+.photo-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.product-pill {
+    display: inline-block;
+    background: #ffe8c6;
+    color: #4b2a17;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin: 0 6px 6px 0;
+}
+
+.bullet-list {
+    list-style: none;
+    margin: 14px 0 18px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.bullet-list li {
+    margin-bottom: 6px;
+}
+
+/* Contact */
+
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.contact-inner p {
+    font-size: 14px;
+    color: #e8f4ea;
+}
+
+.btn-light {
+    background: #fff;
+    color: #255b2c;
+}
+
+/* Footer */
+
+.site-footer {
+    background: #1b3f22;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* RESPONSIVE simple */
+
+@media (max-width: 900px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 4px;
+    }
+
+    .hero-layout,
+    .story-layout,
+    .products-layout {
+        flex-direction: column;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 20px;
+    }
+
+    .hero-label {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .commitments-grid {
+        flex-direction: column;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
